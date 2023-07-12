@@ -6,18 +6,11 @@ import { Routes as ReactRoutes, Route } from 'react-router-dom';
 const CreateRoutes = () => {
     return (
         <ReactRoutes>
-            
-
             <Route >
-
-                <Route path="/" element={<Home />}/>
+  <Route path="/" element={<Home />}/>
                 <Route path='/register' element={<Signup />} />
                 <Route path='/login' element={<Login />}/>
-
             </Route>
-
-
-
         </ReactRoutes>
     )    
 };
