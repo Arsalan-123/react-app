@@ -1,6 +1,8 @@
 import './App.css';
 // import CreateRoutes from './Routes';
-import CreateBrowserRouter from './Routes';
+//import CreateBrowserRouter from './Routes';
+import router from './Routes';
+import { RouterProvider } from 'react-router-dom';
 
 
 
@@ -8,7 +10,7 @@ function App() {
   return (
   
   
-<CreateBrowserRouter/>
+<RouterProvider router={router}/>
 
 
 
