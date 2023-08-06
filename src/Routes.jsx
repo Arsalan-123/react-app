@@ -8,11 +8,10 @@ import Mainlayout from "./Layout/MainLayout/Mainlayout";
 import Home from "./Pages/Screens/Home";
 
 
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Authlayout />,
+    element: <Authlayout/>,
     children: [
 
       {

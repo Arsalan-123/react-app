@@ -43,7 +43,7 @@ const handleLogin = () =>{
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log(errorMessage)
+    console.log(errorMessage + "..")
   });
 
 }
@@ -53,21 +53,6 @@ const handleLogin = () =>{
 
 
   return (
-
-
-//     <div  className='Login'>
-//     <form > 
-//     <h1>Login</h1>
-
-//     <input placeholder='Email'  className='input' type = "text" ref={emailRef}  />
-// <br/>
-// <input placeholder='Password' className='input' type = "text" ref={passwordRef} />
-// <br/>
-// <button  className='btn' variant="contained" onClick={handleLogin}  >  Login</button>
-//     </form>
-   
-
-//  </div>
 
 
 
