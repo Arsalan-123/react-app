@@ -6,13 +6,17 @@ import { createBrowserRouter } from "react-router-dom";
 import Authlayout from "./Layout/Authlayout/Authlayout";
 import Mainlayout from "./Layout/MainLayout/Mainlayout";
 import Home from "./Pages/Screens/Home";
+//import { auth } from "./Components/Config/Firebase";
+
+const isLoggedIn = true 
+const router = createBrowserRouter ( [
 
 
-const router = createBrowserRouter([
   {
     path: "/",
-    element: <Authlayout/>,
-    children: [
+    element: <Authlayout  isLoggedIn={isLoggedIn}   />,
+    children: 
+    [
 
       {
         path: "home",
@@ -23,7 +27,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <Mainlayout />,
+    element: <Mainlayout  isLoggedIn={isLoggedIn}  />,
     children: [
 
      
