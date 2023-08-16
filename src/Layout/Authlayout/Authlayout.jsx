@@ -14,6 +14,7 @@ const Authlayout = ({isLoggedIn, children}) => {
 
 // const Authlayout =() =>{
 //   return(
+  
 //   <Outlet/>
 // )}
 

@@ -9,8 +9,9 @@
 // export default Home
 
 import React from 'react';
-import { Layout, Menu } from 'antd';
+import { Layout, Menu , Row,Col} from 'antd';
 import './Home.css'; // Import the CSS file
+import Images from '../../Components/Images';
 
 import {
   HomeOutlined,
@@ -40,11 +41,18 @@ const Home = () => {
           </Menu.Item>
         </Menu>
       </Header>
-      <Content style={{ padding: '0 50px' }}>
+      <Row>
+      <Col span={8}><Content style={{ padding: '0 50px' }}>
         <div className="site-layout-content">Content Here</div>
       </Content>
+      </Col>
+      <Col span={8}></Col>
+      <Col span={8}>col-8</Col>
+    </Row>
+
       <Footer style={{ textAlign: 'center' }}>Your Footer Text</Footer>
     </Layout>
+    
   );
 };
 
